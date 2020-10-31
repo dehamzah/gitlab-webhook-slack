@@ -1,5 +1,7 @@
 # Gitlab Webhook Slack
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fdehamzah%2Fgitlab-webhook-slack)
+
 To post message to slack based on event happened in gitlab, we can easily setup using [Incoming WebHooks](https://wahyooguardian.slack.com/apps/A0F7XDUAZ-incoming-webhooks) slack app, but it just sent the content as it is. This project act as a middleman to intercept incoming webhook gitlab and reformat the messages. Currently its support the following webhook handler:
 
 ### Note Event
