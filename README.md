@@ -115,4 +115,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-ISC
+[MIT](LICENSE)
