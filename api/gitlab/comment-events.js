@@ -3,7 +3,14 @@ const slackApiClient = require("../../helpers/slackApiClient");
 const constructSlackGitlabDiscussion = require("../../utils/constructSlackGitlabDiscussion");
 
 module.exports = async (req, res) => {
-  const { body } = req;
+  const { body, headers } = req;
+
+  if (
+    headers["x-gitlab-token"] &&
+    headers["x-gitlab-token"] !== process.env.GITLAB_WEBHOOK_TOKEN
+  ) {
+    throw new Error("Webhook source not verified");
+  }
 
   if (!body) {
     return res.send("Send body payload to this endpoint using post request");
