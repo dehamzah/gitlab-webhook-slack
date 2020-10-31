@@ -1,14 +1,14 @@
 {
   "name": "gitlab-webhook-slack",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom gitlab webhook handler for slack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "vercel dev"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Dede Hamzah",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.21.0"
   },
